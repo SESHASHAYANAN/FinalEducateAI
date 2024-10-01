@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture</title>
+    <link rel="stylesheet" href="./physics4.css">
+
+</head>
+<body>
+
+    <div class="sidebar1">
+        <h1>educate</h1>
+        <div class="sidebar-item">
+            <div class="sidebar-box " id="mainhome">HOME</div>
+        </div>
+        <div class="sidebar-item" id="search">
+            <div class="sidebar-box"  id="search">SEARCH</div>
+        </div>
+        <div class="sidebar-item" id="learn">
+            <div class="sidebar-box">HACKATHON</div>
+        </div>
+        <div class="sidebar-item" id="forum">
+            <div class="sidebar-box">FORUM</div>
+        </div>
+        <div class="sidebar-item">
+            <div class="sidebar-box" id="edu">EDUCATION</div>
+        </div>
+        <div class="sidebar-item">
+            <div class="sidebar-box" id="connect">CONNECT</div>
+        </div>
+
+        <div class="sidebar-item">
+            <div class="sidebar-box" id="jobs">JOBS</div>
+        </div>
+        <div class="sidebar-item">
+            <div class="sidebar-box" id="profile">PROFILE</div>
+        </div>
+        <div class="sidebar-item" id="log">
+            <div class="sidebar-box">LOG OUT</div>
+        </div>
+    </div>
+
+</div>
+    <div class="container">
+        <div class="content">
+            <div class="video-container">
+                <video controls>
+                    <source src="./videoplayback.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="description">
+                <h3>Lecture 1: Scale Of Large!</h3>
+                <p> explores the nature of matter, energy, space, and time. It seeks to uncover the laws and principles governing the physical world, from the smallest subatomic particles to the largest structures in the universe. Physics forms the foundation for understanding the natural world and enabling technological advancements that transform our modern society.</p>
+            </div>
+            <div class="chatbot-container">
+                <div class="chatbot-messages" id="chatbotMessages">
+                    <!-- Chat messages will be appended here -->
+                </div>
+                <div class="chatbot-input">
+                    <input type="text" id="chatbotInput" placeholder="Type your message here...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+            <div class="next-lecture">
+                <button>Next Lecture</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h3>Course Contents</h3>
+            <a >Lecture 1: Scale Of Large!</a>
+            <a href="../physics5/physics5.html">Lecture 4: Joining The Community Chat & Groups</a>
+            <!-- Add more links as needed -->
+        </div>
+    </div>
+    <script>
+        function sendMessage() {
+            var inputField = document.getElementById('chatbotInput');
+            var message = inputField.value;
+            if (message.trim() === '') return;
+
+            // Append user message
+            var userMessage = document.createElement('div');
+            userMessage.className = 'chatbot-message user';
+            userMessage.textContent = message;
+            document.getElementById('chatbotMessages').appendChild(userMessage);
+
+            // Simulate bot response
+            var botMessage = document.createElement('div');
+            botMessage.className = 'chatbot-message bot';
+            botMessage.textContent = "I'm a bot. How can I assist you?";
+            setTimeout(function() {
+                document.getElementById('chatbotMessages').appendChild(botMessage);
+                document.getElementById('chatbotMessages').scrollTop = document.getElementById('chatbotMessages').scrollHeight;
+            }, 1000);
+
+            // Clear input field
+            inputField.value = '';
+            document.getElementById('chatbotMessages').scrollTop = document.getElementById('chatbotMessages').scrollHeight;
+        }
+    </script>
+</body>
+</html>

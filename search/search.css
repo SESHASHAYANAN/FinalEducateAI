@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
+}
+
+.sidebar1 {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    font-family: cursive;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px; 
+    padding-bottom: 20px; 
+    color: #f4f4f4;
+}
+
+.sidebar-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px; 
+    flex-grow: 1; 
+    display: flex; 
+    align-items: center; 
+}
+
+.sidebar-box {
+    background-color: #444;
+    color: #fff;
+    padding: 20px 10px; 
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar-box:hover {
+    background-color: #555;
+}
+
+
+.heading{
+    padding: 20px;
+    font-weight: 900;
+    font-size: 400%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.nav-item{
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+
+.search-container {
+    width: 300px;
+    margin-left: 700px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+.search-bar::placeholder {
+    color: #aaa;
+}
+
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.flashcard {
+    background-color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: #333;
+    text-align: center;
+   
+}
+#socialpod{
+    background-image: url("./podsoc.webp");
+    
+}
+#biopod{
+    background-image: url("./biopod.webp");
+}
+#phypod{
+    background-image: url("./phypodc.jpg");
+    
+}
+.large {
+    width: 400px;
+    height: 300px;
+    
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+
+#pod{
+    text-align: center;
+    padding: 30px;
+    font-weight: 900;
+    font-size: 200%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#engpod{
+    background-image: url("./engpod.jpg");
+}
+#phyvid{
+    background-image: url("./download\ \(8\).jpg");
+    height: 300px;
+    margin-bottom: 20px;
+}
+#chemvid{
+    background-image: url(./OIG2\ \(1\).jpg);
+    margin-bottom: 20px;
+}
+#biovid{
+    background-image: url(./OIG4.wKOS7uP.jpg);
+    margin-bottom: 20px;
+}
+#mathsvid{
+    background-image: url(./download.png);
+    margin-bottom: 20px;
+}

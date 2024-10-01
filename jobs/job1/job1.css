@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
+}
+
+.sidebar1 {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    font-family: cursive;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px; 
+    padding-bottom: 20px; 
+    color: #f4f4f4;
+}
+
+.sidebar-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px; 
+    flex-grow: 1; 
+    display: flex; 
+    align-items: center; 
+}
+
+.sidebar-box {
+    background-color: #444;
+    color: #fff;
+    padding: 20px 10px; 
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar-box:hover {
+    background-color: #555;
+}
+
+
+.heading{
+    padding: 20px;
+    font-weight: 900;
+    font-size: 400%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.job-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #dc3545; /* McDonald's theme red */
+}
+
+.job-card .details p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.extra-info {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.job-description {
+    margin-top: 20px;
+}
+
+.job-description h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.job-description p {
+    margin-bottom: 10px;
+}
+
+.job-description ul {
+    margin-left: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Resume Button */
+.resume-btn {
+    background-color: #ffc107; /* McDonald's yellow */
+    color: #fff;
+    margin-right: 10px;
+}
+
+/* Apply Button */
+.apply-btn {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* Applied Button */
+.applied-btn {
+    background-color: #28a745; /* Green when applied */
+    color: white;
+}
+
+/* Company Info */
+.company-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}

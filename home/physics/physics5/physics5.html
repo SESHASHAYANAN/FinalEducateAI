@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture</title>
+    <link rel="stylesheet" href="./physics5.css">
+</head>
+<body>
+
+    <div class="sidebar1">
+        <h1>educate</h1>
+        <div class="sidebar-item">
+            <div class="sidebar-box" id="mainhome">HOME</div>
+        </div>
+        <div class="sidebar-item" id="search">
+            <div class="sidebar-box" id="search">SEARCH</div>
+        </div>
+        <div class="sidebar-item" id="learn">
+            <div class="sidebar-box">HACKATHON</div>
+        </div>
+        <div class="sidebar-item" id="forum">
+            <div class="sidebar-box">FORUM</div>
+        </div>
+        <div class="sidebar-item">
+            <div class="sidebar-box" id="edu">EDUCATION</div>
+        </div>
+        <div class="sidebar-item">
+            <div class="sidebar-box" id="connect">CONNECT</div>
+        </div>
+
+        <div class="sidebar-item">
+            <div class="sidebar-box" id="jobs">JOBS</div>
+        </div>
+        <div class="sidebar-item">
+            <div class="sidebar-box" id="profile">PROFILE</div>
+        </div>
+        <div class="sidebar-item" id="log">
+            <div class="sidebar-box">LOG OUT</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="video-container">
+                <video controls>
+                    <source src="./" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="description">
+                <h3>Lecture 1: Welcome To The Course!</h3>
+                <p>Description of the lecture goes here. This can include details, key points, and anything else relevant to the content of the video.</p>
+            </div>
+            <div class="chatbot-container">
+                <div class="chatbot-messages" id="chatbotMessages">
+                    <!-- Chat messages will be appended here -->
+                </div>
+                <div class="chatbot-input">
+                    <input type="text" id="chatbotInput" placeholder="Type your message here...">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+            <div class="next-lecture">
+                <button>Next Lecture</button>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h3>Course Contents</h3>
+            <a>Lecture 1: Welcome To The Courses!</a>
+            <a href="../physics4/physics4.html">Lecture 5: Joining The Community Chat & Groups</a>
+            <!-- Add more links as needed -->
+        </div>
+    </div>
+    <script>
+        function sendMessage() {
+            var inputField = document.getElementById('chatbotInput');
+            var message = inputField.value.toLowerCase().trim();
+            if (message === '') return;
+
+            // Append user message
+            var userMessage = document.createElement('div');
+            userMessage.className = 'chatbot-message user';
+            userMessage.textContent = inputField.value;
+            document.getElementById('chatbotMessages').appendChild(userMessage);
+
+            // Prepare bot response
+            var botMessage = document.createElement('div');
+            botMessage.className = 'chatbot-message bot';
+            
+            // Respond with specific answers based on the user's input
+            if (message.includes('what is physics')) {
+                botMessage.textContent = "Physics is the study of matter, energy, and the interactions between them.";
+            } else if (message.includes('why is physics important')) {
+                botMessage.textContent = "Physics is important because it helps us understand the fundamental principles governing the universe, leading to advancements in technology and various scientific fields.";
+            } else if (message.includes('important physics terms')) {
+                botMessage.textContent = "Some important physics terms include force, energy, mass, acceleration, velocity, and momentum.";
+            } else {
+                botMessage.textContent = "I'm a bot. How can I assist you?";
+            }
+
+            // Append bot message with a delay
+            setTimeout(function() {
+                document.getElementById('chatbotMessages').appendChild(botMessage);
+                document.getElementById('chatbotMessages').scrollTop = document.getElementById('chatbotMessages').scrollHeight;
+            }, 1000);
+
+            // Clear input field
+            inputField.value = '';
+            document.getElementById('chatbotMessages').scrollTop = document.getElementById('chatbotMessages').scrollHeight;
+        }
+    </script>
+</body>
+</html>

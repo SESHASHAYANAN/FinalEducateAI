@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    
+}
+
+.sidebar1 {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    font-family: cursive;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px; 
+    padding-bottom: 20px; 
+    color: #f4f4f4;
+}
+
+.sidebar-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px; 
+    flex-grow: 1; 
+    display: flex; 
+    align-items: center; 
+}
+
+.sidebar-box {
+    background-color: #444;
+    color: #fff;
+    padding: 20px 10px; 
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar-box:hover {
+    background-color: #555;
+}
+
+
+.heading{
+    padding: 20px;
+    font-weight: 900;
+    font-size: 400%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.nav-item{
+    padding: 10px;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.flashcard {
+    background-color: #ffffff; /* White background */
+    border-radius: 20px; /* Curved edges */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.flashcard h1 {
+    font-size: 28px; /* Large heading */
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.flashcard p {
+    font-size: 18px; /* Larger text for better readability */
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.event-details {
+    margin-bottom: 20px;
+}
+
+.event-details p {
+    font-size: 16px;
+    color: #777;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply {
+    background-color: #28a745; /* Green for Apply */
+    color: #fff;
+}
+
+.browse {
+    background-color: #6c757d; /* Gray for Browse */
+    color: #fff;
+}
+
+.apply:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.browse:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Applied button state */
+button.applied {
+    background-color: #dc3545; /* Red for applied */
+    color: #fff;
+}
+
