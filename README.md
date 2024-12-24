@@ -6,4 +6,4 @@ the help of its own personalized AI Agents and AR.
 Collaborative environment with inbuild Chat Forums , Hackathons and job portals.
 • The App has Adrenaline pushing features such as Quizzes, Tests and assignments.
 • The App has Dopamine satisfying features such as Streaks, Scoreboard and Badges.
-• EDUCATE aims education to make affordable and accessible to every background
+• EDUCATE aims education to make affordable and accessible to every background.
